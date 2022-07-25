@@ -207,11 +207,19 @@ body{
   position:relative;
   border-radius: 5px;
 }
+.abpicture1:hover {
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); 
+}
 .abpicture2{
   position:relative;
   top:170px;
   right: 100px;
   border-radius: 5px;
+}
+.abpicture2:hover {
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); 
 }
 
 /*Eduction and Experience*/
@@ -365,12 +373,90 @@ body{
   padding-bottom: 10px;
   color: white;
 }
+.lang.active {
+  opacity: 1;
+}
+.active.chinese {width: 100%; background-color: #4A675A;}
+.active.english {width: 90%; background-color: #3A4A51;}
+.active.italian {width: 80%; background-color: #ACB5A0;}
+.active.spanish {width: 70%; background-color: #BBCF9B;}
+.active.french {width: 50%; background-color: #D8E1D3;}
 
-.chinese {width: 100%; background-color: #4A675A;}
-.english {width: 90%; background-color: #3A4A51;}
-.italian {width: 80%; background-color: #ACB5A0;}
-.spanish {width: 70%; background-color: #BBCF9B;}
-.french {width: 50%; background-color: #D8E1D3;}
+/* animation */
+.active.chinese{
+  animation:chinese 0.5s ease-out 0s;
+  animation-fill-mode:forwards;    
+  width:0%;
+}
+.active.english {
+  animation:english 0.5s ease-out 0.5s;
+  animation-fill-mode:forwards;   
+  width:0%;
+}
+.active.italian {
+  animation:italian 0.5s ease-out 1s;
+  animation-fill-mode:forwards;   
+  width:0%;
+}
+.active.spanish {
+  animation:spanish 0.5s ease-out 1.5s;
+  animation-fill-mode:forwards;   
+  width:0%;
+}
+.active.french {
+  animation:french 0.5s ease-out 2s;
+  animation-fill-mode:forwards;   
+  width:0%;
+}
+@keyframes chinese {
+  0% { width:0%; }
+  100% { width:90%; }
+}
+@keyframes english {
+  0% { width:0%; }
+  100% { width:40%; }
+}
+@keyframes italian {
+  0% { width:0%; }
+  100% { width:80%; }
+}
+@keyframes spanish {
+  0% { width:0%; }
+  100% { width:70%; }
+}
+@keyframes french {
+  0% { width:0%; }
+  100% { width:50%; }
+}
+.label.one {
+  animation:label 0.5s ease-out 0s;
+  animation-fill-mode:forwards;   
+  opacity:0;
+}
+.label.two {
+  animation:label 0.5s ease-out 0.5s;
+  animation-fill-mode:forwards;   
+  opacity:0;
+}
+.label.three {
+  animation:label 0.5s ease-out 1.0s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.label.four {
+  animation:label 0.5s ease-out 1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+.label.five {
+  animation:label 0.5s ease-out 2s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+@keyframes label {
+  0% { opacity:0; transform:translateY(10px); }
+  100% { opacity:0.9; transform:translateY(0); }
+}
 
 /* Project */
 .projects{
@@ -430,8 +516,10 @@ body{
 
 .flip-card-back {
   background-color: #4A675A;
+  text-align: center;
   color: white;
   transform: rotateY(180deg);
+  padding: 20px;
 }
 
           

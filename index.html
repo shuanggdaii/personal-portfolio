@@ -367,6 +367,7 @@
           background-color: white;
           position: relative;
           border-radius: 6px;
+          box-shadow: 5px 10px #F3F1F5;
         }
         
         /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -401,6 +402,17 @@
           left: 0%;
           }
         }
+          /* Animation */
+          .container{
+            position: relative;
+            transform: translateY(150px);
+            opacity: 0;
+            transition: 2s all ease;
+          }
+          .container.active{
+            transform: translateY(0);
+            opacity: 1;
+          }
         </style>
       </div>
     </div> 
@@ -523,7 +535,7 @@
 
       <div class="progbtnblock">
         <button class="progbtn">
-          <a href="#"><i class="fa-solid fa-diagram-project"></i> View My Projects</a>
+          <a href="#project"><i class="fa-solid fa-diagram-project"></i> View My Projects</a>
         </button>
       </div>
       
@@ -532,25 +544,25 @@
     <!-- Language Skills -->
     <div class="langskills">
       <h1 id="language">Language Skills</h1>
-      <p>Chinese</p>
+      <p class="label one">Chinese</p>
       <div class="langcontainer">
-        <div class="lang chinese">100%</div>
+        <div class="lang active chinese">100%</div>
       </div>
-      <p>English</p>
+      <p class="label two">English</p>
       <div class="langcontainer">
-        <div class="lang english">90%</div>
+        <div class="lang active english">90%</div>
       </div>
-      <p>Italian</p>
+      <p class="label three">Italian</p>
       <div class="langcontainer">
-        <div class="lang italian">80%</div>
+        <div class="lang active italian">80%</div>
       </div>
-      <p>Spanish</p>
+      <p class="label four">Spanish</p>
       <div class="langcontainer">
-        <div class="lang spanish">70%</div>
+        <div class="lang active spanish">70%</div>
       </div>
-      <p>French</p>
+      <p class="label five">French</p>
       <div class="langcontainer">
-        <div class="lang french">50%</div>
+        <div class="lang active french">50%</div>
       </div>
     </div>
 
@@ -567,7 +579,7 @@
               </div>
               <div class="flip-card-back">
                 <h1>World Covid-19 Vaccination Progress</h1> 
-                <p>total vaccinations, vaccination progress, 
+                <p>analysis of the total vaccinations, vaccination progress, 
                   vaccination schemes in different countries, etc</p> 
                 <p>Python</p>
               </div>
@@ -586,6 +598,9 @@
               </div>
               <div class="flip-card-back">
                 <h1>The Correlation between Life Expectancy and CO2 Emissions per Capital</h1>  
+                <p>analysis of the relationship between the average life span of individuals 
+                  and carbon dioxide emission
+                </p>
                 <p>Python</p>
               </div>
             </div>
@@ -602,11 +617,8 @@
                 style="width:300px;height:300px;">
               </div>
               <div class="flip-card-back">
-                <h1>Mario Color Changing</h1> 
-                <br>
-                <br>
-                <br>
-                <br>
+                <h1>Mario Cloth Color Changing</h1> 
+                <p>a project that can achieve the purpose of changing the color of the character</p>
                 <p>Python</p>
               </div>
             </div>
