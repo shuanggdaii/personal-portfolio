@@ -66,7 +66,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#moment">
              Moments
           </a>
         </li>
@@ -464,13 +464,13 @@
             <i class="fa-brands fa-python"></i>
             Python</p>
           <div class="stars">
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
             <span class="unchecked"><i class="fa-solid fa-star"></i></span>
           </div>
@@ -481,11 +481,11 @@
             <i class="fa-brands fa-html5"></i>
             HTML</p>
           <div class="stars">
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star two" ></i></span>
             &nbsp;
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star three"></i></span>
             &nbsp;
             <span class="unchecked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
@@ -498,11 +498,11 @@
             <i class="fa-brands fa-css3-alt"></i>
             CSS</p>
           <div class="stars">
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
             <span class="unchecked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
@@ -515,7 +515,7 @@
             <i class="fa-brands fa-js-square"></i>
             JavaScript</p>
           <div class="stars">
-            <span class="checked"><i class="fa-solid fa-star"></i></span>
+            <span class="star checked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
             <span class="unchecked"><i class="fa-solid fa-star"></i></span>
             &nbsp;
@@ -629,6 +629,139 @@
       
     </div>
     
+    <!-- Moments -->
+    <div class="moments">
+      <h1 id="moment">Some Moments of My Life</h1>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/londoncalling.jpg" style="width:100%;height: 70%" alt="London Calling">
+        <div class="text">London Calling
+          <p>16/07/2022</p>
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/oceanografic.jpg" style="width:100%;height: 70%" alt="Oceanografic Valencia">
+        <div class="text">Oceanografic Valencia
+          <p>18/06/2022</p>
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img/barcelona.jpg" style="width:100%;height: 70%" alt="Barcelona Tour">
+        <div class="text">Barcelona Tour
+          <p>13/06/2022-15/06/2022</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="img/portaventura.jpg" style="width:100%;height: 70%" alt="Port Aventura">
+        <div class="text">Port Aventura
+          <p>13/06/2022-14/06/2022</p>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="img/valencia.jpg" style="width:100%;height: 70%" alt="Valencia">
+        <div class="text">Valencia
+          <p>11/06/2022</p>
+        </div>
+      </div>     
+    </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      <br>
+      <div class="momentbtn" style="text-align:center">
+        <a href="https://www.instagram.com/shuangdaii/" style="text-decoration: none; color:#395B64">More<i class="fa-solid fa-angles-right"></i></a>
+      </div>
+    </div>
+
+      <style>
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      .text {
+        color: white;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      .numbertext {
+        color: white;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #4A675A;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .dot.active {
+        background-color: #717171;
+      }
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
+      }
+      </style>
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+      </script>
+    
+    
+                
+
 
   </div>
 

@@ -322,6 +322,7 @@ body{
   right: 100px;
   font-size: 200%;
   z-index: +1;
+  color: white;
 }
 .checked {
   color: #4F98CA;
@@ -329,6 +330,16 @@ body{
 .unchecked{
   color: white;
 }
+/* animation of stars block */
+.star.checked{
+  animation:checked 0.5s ease-out;
+  animation-fill-mode:forwards;
+}
+@keyframes checked {
+  from {color: white;}
+  to {color:#4F98CA;}
+} 
+
 .progpicture{
   position: absolute;
   bottom: 100px;
@@ -522,5 +533,17 @@ body{
   padding: 20px;
 }
 
-          
-        
+
+/* Moments */
+.moments{
+  position: relative;
+  top: 700px;
+  padding: 10px;
+  margin: 10px;
+  right:20px;
+}
+#moment{
+  font-weight: bold;
+  color: #395B64;
+  text-shadow: 2px 2px #F3F1F5;
+}
