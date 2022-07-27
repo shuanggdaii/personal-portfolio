@@ -2,7 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 /*header*/
-header{
+.TopNavBar{
     height:50px;
     width:100%;
     background-color: #111;
@@ -152,7 +152,7 @@ body{
 
 .iconsNav{
   position: absolute;
-  left: 50px;
+  left: 40px;
   bottom: 25px;
 }
 .iconbtn{
@@ -537,7 +537,7 @@ body{
 /* Moments */
 .moments{
   position: relative;
-  top: 700px;
+  top: 600px;
   padding: 10px;
   margin: 10px;
   right:20px;
@@ -546,4 +546,97 @@ body{
   font-weight: bold;
   color: #395B64;
   text-shadow: 2px 2px #F3F1F5;
+}
+
+/* Contact Page */
+#contact{
+  position: relative;
+  top: 1400px;
+  right: 90px;
+  width: 109.5%;
+  height: 500px;
+  background-color: #111;
+  background-clip: margin-box;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+  float: left;
+}
+.iconsNav2{
+  position: absolute;
+  left: 700px;
+  top: 70px;
+  font-size: 120%;
+  text-align: center;
+}
+.iconbtn2{
+  border-style:none;
+  background-color:transparent;
+  padding: 30px 30px;
+}
+.iconbtn2 a{
+  color:white;
+  font-size: 200%;
+}
+.self-portrait{
+  position: absolute;
+  bottom: 10px;
+  left: 150px;
+  width: 40%;
+  height: 90%;
+}
+.context2{
+  width:400px;
+  position: absolute;
+  left: 720px;
+  top: 250px;
+  font-size: 125%;
+}
+
+/* footer */
+footer{
+  bottom: 0;
+  float: left;
+  background-clip: margin-box;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  right: 90px;
+  top:1400px;
+  width: 109.5%;
+  height: 100px;
+  background-color: white;
+  color: #111;
+}
+.fttext{
+  text-align: center;
+}
+.navleft{
+  position: relative;
+  left: 30px;
+  top: 35px;
+  width: 200px;
+}
+.navright{
+  position: relative;
+  left: 1025px;
+  bottom: 35px;
+  width: 225px;
+}
+.navleft a{
+  text-decoration: none;
+  color: #111;
+}
+.navright a{
+  text-decoration: none;
+  color: #111;
+}
+.navleft a:hover{
+  text-decoration: underline;
+  color: #395B64;
+}
+.navright a:hover{
+  text-decoration: underline;
+  color: #395B64;
 }

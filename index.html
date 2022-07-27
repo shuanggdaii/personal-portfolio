@@ -71,7 +71,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#contact">
             Contact
           </a> 
         </li>
@@ -178,15 +178,16 @@
 
         <button class="iconbtn"><a href="img/wechat.jpg">
           <i class="fa-brands fa-weixin"></i>
-        </a></button>
-      </div>
-<!--github
-        <button class="iconbtn"><a href="#">
-          <i class="fa-brands fa-github"></i>
+        </a></button>        
+        
+        <button class="iconbtn"><a href="https://www.facebook.com/shuang.dai.509">
+          <i class="fa-brands fa-facebook"></i>
         </a></button>
       </div>
     </div>
-  -->
+      </div>
+
+ 
 
     <!-- About Page -->
     <div id="about">
@@ -632,51 +633,52 @@
     <!-- Moments -->
     <div class="moments">
       <h1 id="moment">Some Moments of My Life</h1>
-    <div class="slideshow-container">
+      <div class="slideshow-container">
 
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 5</div>
-        <img src="img/londoncalling.jpg" style="width:100%;height: 70%" alt="London Calling">
-        <div class="text">London Calling
-          <p>16/07/2022</p>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="img/londoncalling.jpg" style="width:100%;height: 70%" alt="London Calling">
+          <div class="text">London Calling
+            <p>16/07/2022</p>
+          </div>
         </div>
-      </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 5</div>
-        <img src="img/oceanografic.jpg" style="width:100%;height: 70%" alt="Oceanografic Valencia">
-        <div class="text">Oceanografic Valencia
-          <p>18/06/2022</p>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="img/oceanografic.jpg" style="width:100%;height: 70%" alt="Oceanografic Valencia">
+          <div class="text">Oceanografic Valencia
+            <p>18/06/2022</p>
+          </div>
         </div>
-      </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 5</div>
-        <img src="img/barcelona.jpg" style="width:100%;height: 70%" alt="Barcelona Tour">
-        <div class="text">Barcelona Tour
-          <p>13/06/2022-15/06/2022</p>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="img/barcelona.jpg" style="width:100%;height: 70%" alt="Barcelona Tour">
+          <div class="text">Barcelona Tour
+            <p>13/06/2022-15/06/2022</p>
+          </div>
         </div>
-      </div>
 
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="img/portaventura.jpg" style="width:100%;height: 70%" alt="Port Aventura">
-        <div class="text">Port Aventura
-          <p>13/06/2022-14/06/2022</p>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="img/portaventura.jpg" style="width:100%;height: 70%" alt="Port Aventura">
+          <div class="text">Port Aventura
+            <p>13/06/2022-14/06/2022</p>
+          </div>
         </div>
-      </div>
 
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="img/valencia.jpg" style="width:100%;height: 70%" alt="Valencia">
-        <div class="text">Valencia
-          <p>11/06/2022</p>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="img/valencia.jpg" style="width:100%;height: 70%" alt="Valencia">
+            <div class="text">Valencia
+            <p>11/06/2022</p>
+            </div>
         </div>
       </div>     
     </div>
       <br>
-      
-      <div style="text-align:center">
+    
+      <div style="text-align:center;position: relative;top: 580px;">
         <span class="dot"></span> 
         <span class="dot"></span> 
         <span class="dot"></span>
@@ -688,76 +690,154 @@
       <div class="momentbtn" style="text-align:center">
         <a href="https://www.instagram.com/shuangdaii/" style="text-decoration: none; color:#395B64">More<i class="fa-solid fa-angles-right"></i></a>
       </div>
-    </div>
-
-      <style>
-      .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-      }
-      .text {
-        color: white;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
-      }
-      .numbertext {
-        color: white;
-        font-size: 12px;
-        padding: 8px 12px;
-        position: absolute;
-        top: 0;
-      }
-      .dot {
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #4A675A;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      }
-      .dot.active {
-        background-color: #717171;
-      }
-      .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-      }
-      @keyframes fade {
-        from {opacity: .4} 
-        to {opacity: 1}
-      }
-      /* On smaller screens, decrease text size */
-      @media only screen and (max-width: 300px) {
-        .text {font-size: 11px}
-      }
-      </style>
-      <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
+  </div>
+  <style>
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    .text {
+      color: white;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    .numbertext {
+      color: white;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #4A675A;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .dot.active {
+      background-color: #717171;
+    }
+    .momentbtn{
+      position: relative;
+      top: 590px;
+    }
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
         }
-      </script>
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+      
+
+      <!-- Contact Page -->
+      <div id="contact">
+        <div class="iconsNav2">
+          <h3 id="context">Do not hesitate to contact me!</h3>
+
+          <button class="iconbtn2"><a href="https://www.instagram.com/shuangdaii/">
+            <i class="fa-brands fa-instagram"></i>
+          </a></button>
+  
+          <button class="iconbtn2"><a href="img/whatsapp.jpg">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a></button>
+
+          <button class="iconbtn2"><a href="img/wechat.jpg">
+            <i class="fa-brands fa-weixin"></i>
+          </a></button>        
+          
+          <button class="iconbtn2"><a href="https://www.facebook.com/shuang.dai.509">
+            <i class="fa-brands fa-facebook"></i>
+          </a></button>
+        </div>
+
+
+        <img class="self-portrait" src="img/self-portrait.png" alt="self-portrait drawn by Binhe Li"/>
+
+
+        <div class="context2">
+          <p style="text-align:justify">
+            <i class="fa-solid fa-phone"></i>
+            &nbsp;
+            &nbsp;
+            +39 3202421482
+            <br>
+            <br>
+            <i class="fa-solid fa-envelope"></i>
+            &nbsp;
+            &nbsp;
+            shuangg.daii@libero.it
+            <br>
+            <br>
+            <i class="fa-solid fa-location-arrow"></i>
+            &nbsp;
+            &nbsp;
+            Rome, Italy
+          </p>
+          </div>
+      </div>
+
+
+      <footer>
+        <nav class="navleft">        
+          <a href="#">Contact</a>
+          &nbsp;
+          <a href="#">About</a>
+        </nav>
+
+        <div class="fttext">
+          <p class="copyright">© 2022 July SHUANG DAI</p>
+        </div>
+
+
+        <nav class="navright">
+          <a class="footer-link" href="https://www.facebook.com/shuang.dai.509">Facebook</a>
+          &nbsp;
+          <a class="footer-link" href="https://www.instagram.com/shuangdaii/">Instagram</a>
+          &nbsp;
+          <a class="footer-link" href="https://github.com/shuanggdaii">Github</a>
+        </nav>
+
+      </footer>
+      
+
     
     
                 
