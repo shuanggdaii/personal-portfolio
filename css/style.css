@@ -1,5 +1,6 @@
 html{
   scroll-behavior: smooth;
+  width: 100%;
 }
 /*header*/
 .TopNavBar{
@@ -13,7 +14,7 @@ html{
     position:sticky;
  }
 
-.dropbtn{
+.navdropbtn{
     background-color:#111;
     font-family: 'Rubik', sans-serif;
     font-weight:bold;
@@ -21,13 +22,13 @@ html{
     font-size: 15px;
     z-index: +1;
 }
-.dropdown {
+.navdropdown {
     position: relative;
     display: inline;
     background-color: #333;
   }
   
-.dropdown-content {
+.navdropdown-content {
     display: none;
     position: absolute;
     min-width: 245px;
@@ -36,7 +37,7 @@ html{
     background-color: #111;
   }
   
-.dropdown-content a {
+.navdropdown-content a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -44,17 +45,11 @@ html{
     font-weight:bold;
   }
 
-.dropdown-content a:hover {background-color: #333;}
+.navdropdown-content a:hover {background-color: #333;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.navdropdown:hover .navdropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #111;}
-
-body{
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
+.navdropdown:hover .navdropbtn {background-color: #111;}
 
 /* back to top buttom */
 .topbtncontainer{
@@ -638,4 +633,11 @@ footer{
 .navright a:hover{
   text-decoration: underline;
   color: #395B64;
+}
+
+/* Responsive */
+@media only screen and (max-width: 991px){
+  .TopNavBar{
+    width: 129%;
+  }
 }

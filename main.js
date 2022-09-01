@@ -1,6 +1,6 @@
 /* animation on scroll of time line */
 function container() {
-    var containers = document.querySelectorAll(".container");
+    var containers = document.querySelectorAll(".tlcontainer");
   
     for (var i = 0; i < containers.length; i++) {
       var windowHeight = window.innerHeight;

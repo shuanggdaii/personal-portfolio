@@ -4,6 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Shuang Dai's World 🗺️</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    
+    
     <script src="main.js"></script>
 
     <!--font-->
@@ -19,15 +22,24 @@
   
     <!--favicon-->
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <style>
+    body{
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      font-family: 'Rubik', sans-serif;
+    }
+    </style>
   
   </head>
 
   <body>
     <!--Top Navigation Bar-->
-    <header class="TopNavBar">
+    <nav class="TopNavBar">
       <div class="TopNavBarLeft">
-        <ul>
-          <li style="float:left">
+        <ul class="navul">
+          <li class="navli" style="float:left">
             <a href="#home" id="home">
             SHUANG
             </a>
@@ -36,23 +48,23 @@
       </div>
       
       <div class="TopNavBarRight" style="float:right">
-        <ul>
-          <li>
+        <ul class="navul">
+          <li class="navli">
             <a href="#home">
               Home
             </a>
           </li>
-          <li>
+          <li class="navli">
             <a href="#about">
               About
             </a>
           </li>
-          <li>
-            <div class="dropdown">
-              <button class="dropbtn"><a href="#edtext">
+          <li class="navli">
+            <div class="navdropdown">
+              <button class="navdropbtn"><a href="#edtext">
               Education and Experience
               </a></button>
-              <div class="dropdown-content">
+              <div class="navdropdown-content">
                 <a href="#edtext">Education</a>
                 <a href="#intern">Internship</a>
                 <a href="#volunteer">Volunteering</a>
@@ -60,17 +72,17 @@
               </div>
             </div>
           </li>
-          <li>
+          <li class="navli">
             <a href="#project">
               Projects
             </a>
           </li>
-          <li>
+          <li class="navli">
             <a href="#moment">
               Moments
             </a>
           </li>
-          <li>
+          <li class="navli">
             <a href="#contact">
               Contact
             </a> 
@@ -78,8 +90,7 @@
         </ul>
 
         <style>
-          ul {
-              width: 100%;
+          .navul {
               list-style-type: none;
               margin: 0;
               padding: 0;
@@ -88,11 +99,11 @@
               display:inline;
           }
           
-          li {
+          .navli {
               float: left;
           }
           
-          li a {
+          .navli a {
               display: block;
               color: white;
               text-align: center;
@@ -100,12 +111,12 @@
               text-decoration: none;
           }
           
-          li a:hover {
+          .navli a:hover {
               background-color: #111;
           }
           </style>
       </div>
-    </header>
+    </nav>
 
     <!--back to top buttom-->
     <div class="topbtncontainer">
@@ -250,8 +261,8 @@
         <h1>Education</h1>
       </div>
       <div class="timeline">
-        <div class="container left">
-          <div class="content">
+        <div class="tlcontainer left">
+          <div class="tlcontent">
             <h2><b>Liceo Bertrand Russell, Rome, Italy</b></h2>
             <h3 class="time"><em>Sept.2018--Present</em></h3>
             <p>High School
@@ -262,8 +273,8 @@
               <br></p>
           </div>
         </div>
-        <div class="container right">
-          <div class="content">
+        <div class="tlcontainer right">
+          <div class="tlcontent">
             <h2><b>Scuola Media "Albio Tibullo", Rome, Italy</b></h2>
             <h3 class="time"><em>Sept.2017--June.2018</em></h3>
             <p>
@@ -271,8 +282,8 @@
               Middle School</p>
           </div>
         </div>
-        <div class="container left">
-          <div class="content">
+        <div class="tlcontainer left">
+          <div class="tlcontent">
             <h2><b>Wutian No.2 Middle School, Wenzhou, China</b></h2>
             <h3 class="time"><em>Sept.2015--July.2017</em></h3> 
               <p>Middle School</p>
@@ -299,7 +310,7 @@
         }
         
         /* Container around content */
-        .container {
+        .tlcontainer {
           padding: 10px 40px;
           position: relative;
           background-color: inherit;
@@ -307,7 +318,7 @@
         }
         
         /* The circles on the timeline */
-        .container::after {
+        .tlcontainer::after {
           content: '';
           position: absolute;
           width: 25px;
@@ -364,7 +375,7 @@
         }
         
         /* The actual content */
-        .content {
+        .tlcontent {
           padding: 20px 30px;
           background-color: white;
           position: relative;
@@ -380,14 +391,14 @@
           }
           
           /* Full-width containers */
-          .container {
+          .tlcontainer {
           width: 100%;
           padding-left: 70px;
           padding-right: 25px;
           }
           
           /* Make sure that all arrows are pointing leftwards */
-          .container::before {
+          .tlcontainer::before {
           left: 60px;
           border: medium solid white;
           border-width: 10px 10px 10px 0;
@@ -405,13 +416,13 @@
           }
         }
           /* Animation of time line */
-          .container{
+          .tlcontainer{
             position: relative;
             transform: translateY(150px);
             opacity: 0;
             transition: 2s all ease;
           }
-          .container.active{
+          .tlcontainer.active{
             transform: translateY(0);
             opacity: 1;
           }
